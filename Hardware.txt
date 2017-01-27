@@ -6,3 +6,10 @@
 4. Raspberry PI (PI2, PI3, or other linux OS small pc)
 5. RFID card 13.56MHz
 
+
+
+Optional>
+A> For daily usage your should be ready to accept power failures, data errors etc. To avoid power failures you can use UPS, but your raspberry might still get rebooted from time to time. 
+A> Backup Power supply for all components.
+
+
