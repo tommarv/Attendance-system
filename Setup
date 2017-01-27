@@ -11,8 +11,17 @@ A>  What you will need - setup
 7.  one free socket on router or switch will need raspberry
 
 
-B>  Programs:
+B>  Schematics
 
-1.  You will need the RFID library and the programs which you can download from the file that i attached . 
+1.  Open schema between Arduino and RF522 module: schema_rfid_to_arduino.jpg and connecting ...
+
+2.  Open
+C>  Programs:
+
+1.  Install in your PC Arduino IDE software, flashing arduino with source code : Arduino_program_RFID_send_serial.ino
+
+2.  If you  monitor serial port 
+
+2.  You will need the RFID library and the programs which you can download from the file that i attached . 
     If you don't know how to add a library , here's the link https://www.arduino.cc/en/Guide/Libraries
     
