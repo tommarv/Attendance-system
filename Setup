@@ -1,0 +1,18 @@
+ Setup 
+  
+A>  What you will need - setup
+
+1.  Arduino (Uno, nano,...)
+2.  RFID RC522 module
+3.  Wires
+4.  Raspberry PI (PI2, PI3, or other linux OS small pc)
+5.  RFID card 13.56MHz
+6.  PC or notebook for programming Arduino with Arduino IDE software, putty software - ssh client
+7.  one free socket on router or switch will need raspberry
+
+
+B>  Programs:
+
+1.  You will need the RFID library and the programs which you can download from the file that i attached . 
+    If you don't know how to add a library , here's the link https://www.arduino.cc/en/Guide/Libraries
+    
