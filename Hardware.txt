@@ -1,0 +1,8 @@
+ What you will need - setup
+
+1. Arduino (Uno, nano,...)
+2. RFID RC522 module
+3. Wire
+4. Raspberry PI (PI2, PI3, or other linux OS small pc)
+5. RFID card 13.56MHz
+
