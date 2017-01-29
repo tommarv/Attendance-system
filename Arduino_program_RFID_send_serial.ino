@@ -13,9 +13,15 @@
 RFID RC522(SDA_DIO, RESET_DIO);
 
 #include <Wire.h>
-// button definovany na pine 2
+// button definovany na
+
+String inputString = "";         // a string to hold incoming data
+boolean stringComplete = false;  // whether the string is complete
+
 
 const int buttonPin = 3;
+const int ledPin = 5;
+const int piezoPin = 7;
 //stlacene tlacitko
 int buttonState = 0;     
 
@@ -26,8 +32,9 @@ char button[1]="";
 
 //**dsc
 void setup() {
-
+inputString.reserve(2);
   // definovanie buttonPinu na ktorom bude tlacitko , tlacitka
+pinMode(ledPin, OUTPUT);
   pinMode(buttonPin, INPUT);
   // aktivuje komunikaciu
   Wire.begin();
@@ -46,6 +53,7 @@ void setup() {
 void loop() {
   //
   delay(50);
+  
   parsovanie();
   push_button();
   odozva();
@@ -96,10 +104,42 @@ if (buttonState == LOW) {
 }
 
 void odozva(){
-  if (Serial.read()=="OK"){
+  if (stringComplete) {
+    Serial.println(inputString);
+    // clear the string:
+    inputString = "";
+    stringComplete = false;
+  
     //beep(
-    
+    digitalWrite(ledPin,HIGH);
+    beep(50);
+    delay(100);
+    digitalWrite(ledPin,LOW);
+    //pin
     //zapis na pin 3 led HIGH
     }
   
   }
+
+
+  void serialEvent() {
+  while (Serial.available()) {
+    // get the new byte:
+    char inChar = (char)Serial.read();
+    // add it to the inputString:
+    inputString += inChar;
+    // if the incoming character is a newline, set a flag
+    // so the main loop can do something about it:
+    if (inChar == '\n') {
+      stringComplete = true;
+    }
+  }
+}
+
+void beep(unsigned char delayms){
+  analogWrite(piezoPin, 20);      // Almost any value can be used except 0 and 255
+                           // experiment to get the best tone
+  delay(delayms);          // wait for a delayms ms
+  analogWrite(piezoPin, 0);       // 0 turns it off
+  delay(delayms);          // wait for a delayms ms   
+}  
