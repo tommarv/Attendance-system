@@ -13,7 +13,10 @@ A>  What you will need - setup
 
 B>  Schematics
 
-1.  Open schema between Arduino and RF522 module: schema_rfid_to_arduino.jpg and connecting ...
+
+1.  Open schema between Arduino and RF522 module: arduino-rc522-1024x421.jpg or 
+    Ardino-RFID-RC522-1024x319.png and connecting to USB port on Raspberry PI
+
 
 2.  Open
 C>  Programs:
