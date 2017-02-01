@@ -10,4 +10,4 @@
   7.  sudo apt-get install python
   8.  sudo apt-get install python-picamera
   9.  sudo apt-get install vsftpd
-  
+ 10.  sudo apt-get install python-mysqldb
