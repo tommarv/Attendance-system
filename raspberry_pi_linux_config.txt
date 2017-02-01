@@ -1,0 +1,11 @@
+ On raspberrz install linux.
+ 
+ 
+  1.  sudo aptitude update
+  2.  sudo apt-get install apache2 apache2-doc apache2-utils 
+  3.  sudo apt-get install libapache2-mod-php5 php5 php-pear php5-xcache
+  4.  sudo apt-get install php5-mysql  
+  5.  sudo apt-get install mysql-server mysql-client
+  6.  sudo apt-get install phpmyadmin
+  7.  sudo apt-get install python
+  8.  sudo apt-get install 
