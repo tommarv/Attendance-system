@@ -15,5 +15,5 @@ Easy to use - Maked Web page for Administration, Manager, PR and at the and user
 
 
 1.  On raspberry PI 2 - Installing debian wheezy linux
-2.  Install apache2, mysql, phpmyadmin, vsftpd, python, python-picamera, arduino
+2.  Detail installation software on RasPi2 when you need to used (File raspberry_pi_linux_config.txt).
 3.  
