@@ -10,6 +10,8 @@
 
 Optional>
 A> For daily usage your should be ready to accept power failures, data errors etc. To avoid power failures you can use UPS, but your raspberry might still get rebooted from time to time. 
-A> Backup Power supply for all components.
+B> Backup Power supply for all components.
+
+C> Connect camera SPI on raspberry 
 
 
